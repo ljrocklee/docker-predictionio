@@ -36,7 +36,7 @@ RUN mv /elasticsearch* /elasticsearch
 #HBase
 RUN wget -O - http://archive.apache.org/dist/hbase/1.2.7/hbase-1.2.7-bin.tar.gz | tar zx
 RUN mv /hbase* /hbase
-RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /hbase/conf/hbase-env.sh 
+RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> /hbase/conf/hbase-env.sh 
 
 #Python SDK
 RUN apt-get install -y python-pip
